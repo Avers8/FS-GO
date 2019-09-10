@@ -4,15 +4,15 @@ import "fmt"
 
 func f(x int, y int) (int, int) {
 
-return x + y, 7
+	return x + y, 7
 }
 
-func main () {
+func main() {
 
-x1 := 2
-x2 := 4
+	x1 := 2
+	x2 := 4
 
-res, n := f(x1,x2)
-fmt.Println (res, n)
+	res, n := f(x1, x2)
+	fmt.Println(res, n)
 
 }

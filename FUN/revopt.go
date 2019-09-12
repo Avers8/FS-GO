@@ -5,11 +5,9 @@ import "fmt"
 func rev (sx []int) []int {
 
 
-for i := 0; i < len(sx)/2; i++ {
-s1 := sx[i]
-s2 := sx[(len(sx) - (i + 1))]
-sx[i] = s2
-sx[(len(sx) - (i + 1))] = s1
+for i := len(sx)/2 - 1; i >= 0; i-- {
+  opp := len(sx) - 1 - i
+  sx[i], sx[opp] = sx[opp], sx[i]
 
 }
 return sx
